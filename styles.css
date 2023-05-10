@@ -1,0 +1,22 @@
+.heading {
+  font-family: "Anton", sans-serif;
+  /* line-height: 1.25; */
+  color: #31023d;
+  letter-spacing: 0.04em;
+}
+.content-text {
+  color: #000483;
+  font-family: "Anek Latin", sans-serif;
+  line-height: 1.15;
+}
+.content-text-white {
+  font-family: "Anek Latin", sans-serif;
+  line-height: 1.15;
+}
+.bg-color {
+  background-color: #5c022d;
+}
+.img-circle {
+  width: 100px;
+  height: 100px;
+}

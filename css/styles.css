@@ -1,0 +1,30 @@
+.heading {
+  font-family: "Anton", sans-serif;
+  /* line-height: 1.25; */
+  color: #31023d;
+  letter-spacing: 0.04em;
+}
+.heading-mobile {
+  font-family: "Anton", sans-serif;
+  /* line-height: 1.25; */
+  color: #31023d;
+}
+.content-text {
+  color: #000483;
+  font-family: "Anek Latin", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 21px; */
+  line-height: 23px;
+}
+.content-text-white {
+  font-family: "Anek Latin", sans-serif;
+  line-height: 1.15;
+}
+.bg-color {
+  background-color: #5c022d;
+}
+.img-circle {
+  width: 100px;
+  height: 100px;
+}

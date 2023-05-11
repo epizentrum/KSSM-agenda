@@ -17,6 +17,8 @@
 .content-text-white {
   font-family: "Anek Latin", sans-serif;
   line-height: 1.15;
+  height: 800px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Add scrollbars if the content overflows */
 }
 .bg-color {
   background-color: #5c022d;

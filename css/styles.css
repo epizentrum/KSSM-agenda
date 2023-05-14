@@ -94,7 +94,7 @@ h4 {
 }
   
 .lectures > .card-main {
-      background-color: var(--light-blue);
+      background-color: var(--dark-blue);
       color: var(--white);
       margin: 20px 0 20px 0;
       cursor: pointer;

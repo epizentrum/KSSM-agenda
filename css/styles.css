@@ -1,12 +1,83 @@
+:root {
+  --white: #f3f5f8;
+  --dark-blue: #000483;
+  --light-blue: #0006b6;
+  --gold: #d69f12;
+  --light-pink: #5c022d;
+  --dark-pink: #31023d;
+  --xxl: 3.052rem;
+  --xl: 2.441rem;
+  --x: 1.953rem;
+  --m: 1.563rem;
+  --s: 1.31rem;
+  --xs: 1.13rem;
+  --xxs: 0.875rem;
+  --s-m: 1.25rem;
+  --xs-m: 1.063rem;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--xxl);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--xl);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: var(--x);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: var(--m);
+  font-weight: bold;
+}
+
+.text-1 {
+  font-size: var(--s);
+}
+
+.text-2 {
+  font-size: var(--xs);
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--xl);
+  }
+
+  h2 {
+    font-size: var(--x);
+  }
+
+  h3 {
+    font-size: var(--m);
+  }
+
+  .text-1 {
+    font-size: var(--s-m);
+  }
+
+  .text-2 {
+    font-size: var(--xs-m);
+  }
+}
+
 .heading {
   font-family: "Anton", sans-serif;
-  /* line-height: 1.25; */
   color: #31023d;
   letter-spacing: 0.04em;
 }
 .heading-mobile {
   font-family: "Anton", sans-serif;
-  /* line-height: 1.25; */
   color: #31023d;
 }
 .content-text {
@@ -14,7 +85,6 @@
   font-family: "Anek Latin", sans-serif;
   font-style: normal;
   font-weight: 400;
-  /* font-size: 21px; */
   line-height: 23px;
 }
 .content-text-white {

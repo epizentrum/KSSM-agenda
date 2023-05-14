@@ -121,7 +121,7 @@ nav, footer {
 
 .footer-grant > .card-main {
   color: var(--white);
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
 }
 
 footer {

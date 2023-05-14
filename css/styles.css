@@ -1,12 +1,12 @@
 :root {
-  /* colors */
+      /* colors */
       --white: #F3F5F8;
       --dark-blue: #000483;
       --light-blue: #0006B6;
       --gold: #D69F12;
       --light-pink: #5C022D;
       --dark-pink: #31023D;
-  /* font sizes */
+      /* font sizes */
       --xxl: 3.052rem;
       --xl: 2.441rem;
       --x: 1.953rem;
@@ -14,86 +14,88 @@
       --s: 1.31rem;
       --xs: 1.13rem;
       --xxs: 0.875rem;
-  /*additional mobile font sizes */
+      /*additional mobile font sizes */
       --s-m: 1.25rem;
       --xs-m: 1.063rem;
 }
-  
-  /* implementing sizes of fonts */
+
+/* implementing sizes of fonts */
 * {
       margin: 0;
       box-sizing: border-box;
 }
-  
+
 h1 {
       font-size: var(--xxl);
       font-weight: bold;
 }
-  
+
 h2 {
       font-size: var(--xl);
       font-weight: bold;
 }
-  
+
 h3 {
       font-size: var(--x);
       font-weight: bold;
 }
-  
+
 h4 {
       font-size: var(--m);
       font-weight: bold;
 }
-  
+
 .text-1 {
       font-size: var(--s);
 }
-  
+
 .text-2 {
       font-size: var(--xs);
 }
-  
-  /* Additional styling of the main page */
+
+/* Additional styling of the main page */
 .about {
       background-color: var(--dark-blue);
       color: var(--white);
 }
-  
-      /* Header so img doesnt break */
+
+/* Header so img doesnt break */
 .info {
       flex-basis: 50%;
       row-gap: 3rem;
 }
-  
+
 .posterImg {
-      flex-basis: 50%; 
+      flex-basis: 50%;
 }
-  
-.timeline, .partners {
+
+.timeline,
+.partners {
       color: var(--dark-pink)
 }
-  
-.AgendaLink > a, .form > a {
+
+.AgendaLink>a,
+.form>a {
       text-shadow: 5px 5px 15px #353535;
 }
-  
-.date > button {
+
+.date>button {
       color: var(--white);
       background-color: var(--light-pink);
       font-weight: bold;
       border-radius: 0.5rem;
 }
-  
-.date > button:hover {
+
+.date>button:hover {
       background-color: var(--dark-pink);
 }
-  
-  /* Imporant fod dislaying thrusday lectures on first page load */
+
+/* Imporant fod dislaying thrusday lectures on first page load */
 .lectures [data-day="friday"] {
       display: none;
 }
-  
-.lectures > .card-main {
+
+.lectures>.card-main {
       background-color: var(--light-blue);
       color: var(--white);
       margin: 20px 0 20px 0;
@@ -101,106 +103,152 @@ h4 {
       border-radius: 0.5rem;
 }
 
-nav, footer {
-  background: rgb(0,4,131);
-  background: linear-gradient(270deg, rgba(0,4,131,1) 0%, rgba(92,0,0,1) 100%);
+nav,
+footer {
+      background: rgb(0, 4, 131);
+      background: linear-gradient(270deg, rgba(0, 4, 131, 1) 0%, rgba(92, 0, 0, 1) 100%);
 }
 
 .nav-link {
-  color: var(--white);
+      color: var(--white);
 }
 
 .navbar-toggler {
-    color: rgba(255,255,255,.5);
-    border-color: rgba(255,255,255,.1);
+      color: rgba(255, 255, 255, .5);
+      border-color: rgba(255, 255, 255, .1);
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.footer-grant > .card-main {
-  color: var(--white);
-  background-color: var(--light-blue);
+.footer-grant>.card-main {
+      color: var(--white);
+      background-color: var(--light-blue);
 }
 
 footer {
-  color: var(--white);
+      color: var(--white);
 }
 
-.media, .location, .contact {
-  flex-grow: 1;
-  flex-basis: 0;
+.media,
+.location,
+.contact {
+      flex-grow: 1;
+      flex-basis: 0;
 }
 
-  /* End style for the main page */
-  
+/* End style for the main page */
+
 @media screen and (max-width: 768px) {
-      
-    h1 {
-          font-size: var(--xl);
-    }
-      
-    h2 {
-          font-size: var(--x);
-    }
-      
-    h3 {
-          font-size: var(--m);
-    }
-      
-    .text-1 {
-          font-size: var(--s-m);
-    }
-      
-    .text-2 {
-          font-size: var(--xs-m);
-    }
-  
-    .info {
-          flex: 1;
-    }
 
-    footer {
-      flex-direction: column;
-    }
+      h1 {
+            font-size: var(--xl);
+      }
 
-    .media, .location, .contact {
-      padding: 1.5rem 0 1.5rem 0;
-    }
+      h2 {
+            font-size: var(--x);
+      }
+
+      h3 {
+            font-size: var(--m);
+      }
+
+      .text-1 {
+            font-size: var(--s-m);
+      }
+
+      .text-2 {
+            font-size: var(--xs-m);
+      }
+
+      .info {
+            flex: 1;
+      }
+
+      footer {
+            flex-direction: column;
+      }
+
+      .media,
+      .location,
+      .contact {
+            padding: 1.5rem 0 1.5rem 0;
+      }
 }
-  
-  /* Image is wierd for now, so it media query added so it looks good enough */
-@media (min-width: 768px) and (max-width: 1200px) { 
-    .about {
-          flex-direction: column;
-    }
-   }
+
+/* Image is wierd for now, so it media query added so it looks good enough */
+@media (min-width: 768px) and (max-width: 1200px) {
+      .about {
+            flex-direction: column;
+      }
+}
 
 .heading {
-  font-family: "Anton", sans-serif;
-  color: #31023d;
-  letter-spacing: 0.04em;
+      font-family: "Anton", sans-serif;
+      color: #31023d;
+      letter-spacing: 0.04em;
 }
+
 .heading-mobile {
-  font-family: "Anton", sans-serif;
-  color: #31023d;
+      font-family: "Anton", sans-serif;
+      color: #31023d;
 }
+
 .content-text {
-  color: #000483;
-  font-family: "Anek Latin", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23px;
+      color: #000483;
+      font-family: "Anek Latin", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
 }
+
 .content-text-white {
-  font-family: "Anek Latin", sans-serif;
-  line-height: 1.15;
+      font-family: "Anek Latin", sans-serif;
+      line-height: 1.15;
 }
+
 .bg-color {
-  background-color: #5c022d;
+      background-color: #5c022d;
 }
+
 .img-circle {
-  width: 100px;
-  height: 100px;
+      width: 100px;
+      height: 100px;
+}
+
+/* Dialog */
+dialog {
+      display: none;
+      opacity: 0;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 50px);
+      max-width: 1000px;
+}
+
+dialog::backdrop {
+      /* Change background backdrop */
+      background-color: #000483ad;
+}
+
+dialog[open] {
+      display: block;
+      opacity: 1;
+
+      animation: showDialog 0.3s ease-in;
+}
+
+@keyframes showDialog {
+      from {
+            opacity: 0;
+            display: block;
+      }
+
+      to {
+            opacity: 1;
+
+      }
 }

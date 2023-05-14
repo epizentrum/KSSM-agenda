@@ -1,29 +1,16 @@
-const thursdayButton = document.querySelector('.thursday');
-const fridayButton = document.querySelector('.friday');
-const thursdayCards = document.querySelectorAll('.card[data-day="thursday"]');
-const fridayCards = document.querySelectorAll('.card[data-day="friday"]');
-let currentCards = 'thursday';
-
-thursdayButton.addEventListener('click', () => {
-  if (currentCards !== 'thursday') { // check which tiles are displayed
-    // hide current tiles
-    document.querySelectorAll(`.card[data-day="${currentCards}"]`)
-      .forEach(card => card.style.display = 'none');
-
-    // show thursday tiles
-    thursdayCards.forEach(card => card.style.display = 'block');
-    currentCards = 'thursday';
-  }
-});
-
-fridayButton.addEventListener('click', () => {
-  if (currentCards !== 'friday') { // check which tiles are displayed
-    // hide current tiles
-    document.querySelectorAll(`.card[data-day="${currentCards}"]`)
-      .forEach(card => card.style.display = 'none');
-
-    // show friday tiles
-    fridayCards.forEach(card => card.style.display = 'block');
-    currentCards = 'friday';
-  }
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const btns = document.querySelectorAll('.tabs-btn');
+  btns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      btns.forEach(btn => {
+        btn.classList.remove('active');
+      })
+      btn.classList.add('active');
+      const dayType = btn.dataset.day;
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.style.display = (card.dataset.day == dayType) ? 'block' : 'none';
+      })
+    })
+  });
+})

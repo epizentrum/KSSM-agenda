@@ -69,11 +69,11 @@ h4 {
       flex-basis: 50%; 
 }
   
-.timeline {
+.timeline, .partners {
       color: var(--dark-pink)
 }
   
-a {
+.AgendaLink > a, .form > a {
       text-shadow: 5px 5px 15px #353535;
 }
   
@@ -93,13 +93,46 @@ a {
       display: none;
 }
   
-.card-main {
+.lectures > .card-main {
       background-color: var(--light-blue);
       color: var(--white);
       margin: 20px 0 20px 0;
       cursor: pointer;
       border-radius: 0.5rem;
 }
+
+nav, footer {
+  background: rgb(0,4,131);
+  background: linear-gradient(270deg, rgba(0,4,131,1) 0%, rgba(92,0,0,1) 100%);
+}
+
+.nav-link {
+  color: var(--white);
+}
+
+.navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.footer-grant > .card-main {
+  color: var(--white);
+  background-color: var(--light-blue);
+}
+
+footer {
+  color: var(--white);
+}
+
+.media, .location, .contact {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
   /* End style for the main page */
   
 @media screen and (max-width: 768px) {
@@ -127,6 +160,14 @@ a {
     .info {
           flex: 1;
     }
+
+    footer {
+      flex-direction: column;
+    }
+
+    .media, .location, .contact {
+      padding: 1.5rem 0 1.5rem 0;
+    }
 }
   
   /* Image is wierd for now, so it media query added so it looks good enough */
@@ -134,7 +175,7 @@ a {
     .about {
           flex-direction: column;
     }
-}
+   }
 
 .heading {
   font-family: "Anton", sans-serif;

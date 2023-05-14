@@ -1,74 +1,139 @@
 :root {
-  --white: #f3f5f8;
-  --dark-blue: #000483;
-  --light-blue: #0006b6;
-  --gold: #d69f12;
-  --light-pink: #5c022d;
-  --dark-pink: #31023d;
-  --xxl: 3.052rem;
-  --xl: 2.441rem;
-  --x: 1.953rem;
-  --m: 1.563rem;
-  --s: 1.31rem;
-  --xs: 1.13rem;
-  --xxs: 0.875rem;
-  --s-m: 1.25rem;
-  --xs-m: 1.063rem;
+  /* colors */
+      --white: #F3F5F8;
+      --dark-blue: #000483;
+      --light-blue: #0006B6;
+      --gold: #D69F12;
+      --light-pink: #5C022D;
+      --dark-pink: #31023D;
+  /* font sizes */
+      --xxl: 3.052rem;
+      --xl: 2.441rem;
+      --x: 1.953rem;
+      --m: 1.563rem;
+      --s: 1.31rem;
+      --xs: 1.13rem;
+      --xxs: 0.875rem;
+  /*additional mobile font sizes */
+      --s-m: 1.25rem;
+      --xs-m: 1.063rem;
 }
-
+  
+  /* implementing sizes of fonts */
 * {
-  margin: 0;
-  box-sizing: border-box;
+      margin: 0;
+      box-sizing: border-box;
 }
-
+  
 h1 {
-  font-size: var(--xxl);
-  font-weight: bold;
+      font-size: var(--xxl);
+      font-weight: bold;
 }
-
+  
 h2 {
-  font-size: var(--xl);
-  font-weight: bold;
+      font-size: var(--xl);
+      font-weight: bold;
 }
-
+  
 h3 {
-  font-size: var(--x);
-  font-weight: bold;
+      font-size: var(--x);
+      font-weight: bold;
 }
-
+  
 h4 {
-  font-size: var(--m);
-  font-weight: bold;
+      font-size: var(--m);
+      font-weight: bold;
 }
-
+  
 .text-1 {
-  font-size: var(--s);
+      font-size: var(--s);
 }
-
+  
 .text-2 {
-  font-size: var(--xs);
+      font-size: var(--xs);
 }
-
+  
+  /* Additional styling of the main page */
+.about {
+      background-color: var(--dark-blue);
+      color: var(--white);
+}
+  
+      /* Header so img doesnt break */
+.info {
+      flex-basis: 50%;
+      row-gap: 3rem;
+}
+  
+.posterImg {
+      flex-basis: 50%; 
+}
+  
+.timeline {
+      color: var(--dark-pink)
+}
+  
+a {
+      text-shadow: 5px 5px 15px #353535;
+}
+  
+.date > button {
+      color: var(--white);
+      background-color: var(--light-pink);
+      font-weight: bold;
+      border-radius: 0.5rem;
+}
+  
+.date > button:hover {
+      background-color: var(--dark-pink);
+}
+  
+  /* Imporant fod dislaying thrusday lectures on first page load */
+.lectures [data-day="friday"] {
+      display: none;
+}
+  
+.card-main {
+      background-color: var(--light-blue);
+      color: var(--white);
+      margin: 20px 0 20px 0;
+      cursor: pointer;
+      border-radius: 0.5rem;
+}
+  /* End style for the main page */
+  
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: var(--xl);
-  }
-
-  h2 {
-    font-size: var(--x);
-  }
-
-  h3 {
-    font-size: var(--m);
-  }
-
-  .text-1 {
-    font-size: var(--s-m);
-  }
-
-  .text-2 {
-    font-size: var(--xs-m);
-  }
+      
+    h1 {
+          font-size: var(--xl);
+    }
+      
+    h2 {
+          font-size: var(--x);
+    }
+      
+    h3 {
+          font-size: var(--m);
+    }
+      
+    .text-1 {
+          font-size: var(--s-m);
+    }
+      
+    .text-2 {
+          font-size: var(--xs-m);
+    }
+  
+    .info {
+          flex: 1;
+    }
+}
+  
+  /* Image is wierd for now, so it media query added so it looks good enough */
+@media (min-width: 768px) and (max-width: 1200px) { 
+    .about {
+          flex-direction: column;
+    }
 }
 
 .heading {

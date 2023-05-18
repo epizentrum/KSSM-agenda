@@ -181,6 +181,13 @@ footer {
       }
 }
 
+/* Query for long author names, cause im out of simple ideas */
+@media screen and (max-width: 500px) {
+      .card-author {
+            flex-direction: column;
+      }
+}
+
 /* Image is wierd for now, so it media query added so it looks good enough */
 @media (min-width: 768px) and (max-width: 1200px) {
       .about {
@@ -231,19 +238,31 @@ dialog {
       transform: translate(-50%, -50%);
       width: calc(100% - 50px);
       max-width: 1000px;
+      background-color: var(--dark-blue);
+      color: var(--white);
+      border: none;
+      border-radius: 0.5rem;
 }
 
 dialog::backdrop {
       /* Change background backdrop */
-      background-color: #000483ad;
+      background-color: #535353ad;
 }
 
 dialog[open] {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
       opacity: 1;
 
       animation: showDialog 0.3s ease-in;
 }
+
+.modalBtn {
+      background-color: var(--dark-blue);
+      color: var(--white);
+      line-height: 0;
+}
+
 
 @keyframes showDialog {
       from {

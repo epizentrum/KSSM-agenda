@@ -59,7 +59,7 @@ function processRows(json, table) {
         <div class="card-body d-flex flex-column">
             <div class="card-top d-flex justify-content-between">
                 <p class="card-text text-left card-time">${row['lectureTime']}</p>
-                <img src="./resources/logoipsum-225.svg" alt="logo" class="">
+                <img src="./resources/KSSM logo 1-1.png" alt="logo" class="">
             </div>
             <div class="card-center py-4">
                 <h4 class="card-title text-center">${row['lectureName']}</h4>

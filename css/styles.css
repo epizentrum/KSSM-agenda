@@ -179,11 +179,15 @@ footer {
       .contact {
             padding: 1.5rem 0 1.5rem 0;
       }
+}
+     
 
-      .partners > div {
+@media screen and (max-width: 991px) {
+       .partners > div {
             flex-direction: column;
       }
 }
+
 
 /* Query for long author names, cause im out of simple ideas */
 @media screen and (max-width: 500px) {

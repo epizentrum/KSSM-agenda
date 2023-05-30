@@ -179,10 +179,14 @@ footer {
   .contact {
     padding: 1.5rem 0 1.5rem 0;
   }
+
+  img[alt="ARENA-logo"] {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .partners > div {
+  .partners > div, .partners > div > div {
     flex-direction: column;
   }
 }

@@ -186,7 +186,8 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-  .partners > div, .partners > div > div {
+  .partners > div,
+  .partners > div > div {
     flex-direction: column;
   }
 }
